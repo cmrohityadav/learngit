@@ -33,3 +33,14 @@ git push <remote-name> <branch-name>:
 
 git push origin main
 ```
+- Set Upstream Branch (for the first time): If you are pushing a local branch to a remote for the first time, you can set the upstream branch (the remote branch) so that git push can track changes more easily in the future.
+```
+git push --set-upstream origin my-feature-branch
+```
+
+- After this, you can simply use git push without needing to specify the remote and branch.
+
+## Pull from a Remote:
+```
+git pull origin my-feature-branch
+```
