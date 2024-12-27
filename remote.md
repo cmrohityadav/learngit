@@ -39,8 +39,27 @@ git push --set-upstream origin my-feature-branch
 ```
 
 - After this, you can simply use git push without needing to specify the remote and branch.
+-u is the shorthand for --set-upstream.
 
 ## Pull from a Remote:
 ```
 git pull origin my-feature-branch
 ```
+- Once the upstream is set, you can use git pull without specifying the remote and branch.
+- if you haven't set an upstream branch, you'll typically need to specify the remote and branch manually when pulling:
+```
+git pull origin my-feature-branch
+
+```
+
+- Once the upstream is set for your local branch, you can use git pull without specifying the remote or branch:
+```
+git pull
+
+```
+---
+- Change the URL of an existing remote: git remote set-url origin new-remote-url
+- Add a new remote: git remote add new-remote-name remote-url
+- Remove a remote: git remote remove remote-name
+- Rename a remote: git remote rename old-name new-name
+---
