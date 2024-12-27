@@ -63,3 +63,18 @@ git pull
 - Remove a remote: git remote remove remote-name
 - Rename a remote: git remote rename old-name new-name
 ---
+
+## To Delete Only the Remote Branch:
+```
+git push origin --delete <branch_name>
+```
+- This command will delete the remote branch (from the remote repository like GitHub or GitLab), but it will not affect your local branch.
+
+## To Delete Only the Local Branch:
+```
+git branch -d <branch_name>
+```
+- Or if you need to force it:
+```
+git branch -D <branch_name>
+```
